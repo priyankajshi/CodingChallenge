@@ -19,11 +19,12 @@ class LoanDetailsTest {
 
     String baseUri;
     Map<String, String> headers;
-    String apiPath = "/api/brfunnelorch/v2/resume/byLeadSecret";
+    String apiPath;
 
     @BeforeTest
     public void setUp() {
        baseUri = "https://credapi.credify.tech";
+       apiPath = "/api/brfunnelorch/v2/resume/byLeadSecret";
        headers = new HashMap<>();
        headers.put("x-cf-source-id", "coding-challenge");
        headers.put("x-cf-corr-id","19bb9b74-410a-11ec-973a-0242ac130003");
