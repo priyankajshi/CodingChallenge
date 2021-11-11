@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+	
+	<suite name="Upgrade Coding Challenge" >
+
+	<listeners>
+ 		<listener class-name="com.autotests.ui.lib.ExtentListener"></listener>
+ 	</listeners>
+
+	<test name="UI - Validate offer test" >
+		<classes>
+			<class name="com.autotests.ui.testCases.ValidateOfferTest">
+				<methods>
+					<include name="validateLoanOffer" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="API - Validate loan app resumption" >
+		<classes>
+			<class name="com.autotests.api.LoanDetailsTest">
+				<methods>
+					<include name="testPostLoanDetails" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="API - Validate loan app resumption with Invalid UUID" >
+		<classes>
+			<class name="com.autotests.api.LoanDetailsTest">
+				<methods>
+					<parameter name="loanAppUuid" value="b8096ec7-2150-405f-84f5-ae99864b5e96" />
+					<parameter name="skipSideEffects" value="true"></parameter>
+					<include name="testPostLoanDetailsInvalid" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
