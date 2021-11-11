@@ -1,4 +1,4 @@
-package com.autotests.ui.testCases;
+package com.autotests.ui;
 
 import com.autotests.base.BaseTest;
 import com.autotests.ui.pages.BasicInfoPage;

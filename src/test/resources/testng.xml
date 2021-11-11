@@ -9,7 +9,7 @@
 
 	<test name="UI - Validate offer test" >
 		<classes>
-			<class name="com.autotests.ui.testCases.ValidateOfferTest">
+			<class name="com.autotests.ui.ValidateOfferTest">
 				<methods>
 					<include name="validateLoanOffer" />
 				</methods>
