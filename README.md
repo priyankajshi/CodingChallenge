@@ -6,7 +6,6 @@
 * TestNG
 * Selenium
 * RestAssured
-* Extent Reports
 
 
 ### Important commands:
